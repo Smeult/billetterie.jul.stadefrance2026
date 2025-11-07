@@ -48,6 +48,12 @@ header .alert{
 
 }
 
+header img{
+
+  width:100%; max-width:500px; margin:20px auto; display:block; border-radius:12px;
+
+}
+
 .description{
 
   background:#f0f0f0;padding:14px;border-radius:12px;margin-bottom:20px;color:#111;line-height:1.6;font-size:14px
@@ -109,6 +115,8 @@ input[type=number]{width:50px;padding:6px;margin-left:6px;border-radius:6px;bord
     <h1>Jul — Stade de France 2026</h1>
 
     <div class="alert">Des places viennent de tomber alors n’attends plus !</div>
+
+    <img src="https://i.imgur.com/CC0WZYP.jpg" alt="Affiche du concert">
 
   </header>
 
@@ -266,7 +274,15 @@ tickets.forEach(t => {
 
     rt.textContent = "Billet choisi : " + seat;
 
-    rd.innerHTML = `Combien de places ? (max 1)<br><input type="number" id="qty" min="1" max="${available[seat]}" value="1">`;
+    rd.innerHTML = `
+
+      <img src="https://i.imgur.com/CC0WZYP.jpg" style="width:90%;border-radius:12px;margin-bottom:12px">
+
+      Combien de places ? (max 1)<br>
+
+      <input type="number" id="qty" min="1" max="${available[seat]}" value="1">
+
+    `;
 
     big.textContent = "";
 
@@ -307,4 +323,3 @@ modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.style.display=
 </body>
 
 </html>
-
