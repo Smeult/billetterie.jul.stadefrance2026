@@ -44,7 +44,7 @@ header h1{font-size:28px;color:var(--accent);margin-bottom:6px}
 
 header .alert{
 
-  font-size:20px;color:var(--accent2);font-weight:700;margin-bottom:12px;
+  font-size:22px;color:var(--accent2);font-weight:700;margin-bottom:12px;
 
 }
 
@@ -56,19 +56,19 @@ header .alert{
 
 .date-lieu{
 
-  font-size:16px;font-weight:700;color:var(--accent);margin-top:10px;margin-bottom:16px;
+  font-size:18px;font-weight:700;color:var(--accent);margin-top:10px;margin-bottom:16px;
 
 }
 
 .grid{
 
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px
 
 }
 
 .ticket{
 
-  background:var(--card);padding:10px;border-radius:12px;border:1px solid #ddd;
+  background:var(--card);padding:12px;border-radius:12px;border:1px solid #ddd;
 
   cursor:pointer;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;justify-content:space-between;
 
@@ -78,9 +78,7 @@ header .alert{
 
 .seat{font-weight:700;font-size:15px;margin-bottom:4px;color:var(--accent2)}
 
-.desc{color:var(--muted);font-size:12px;margin-bottom:6px}
-
-.tag{display:inline-block;padding:4px 6px;border-radius:999px;background:rgba(128,0,0,0.15);color:var(--accent);font-weight:600;font-size:11px;margin-bottom:2px}
+.desc{color:var(--muted);font-size:13px;margin-bottom:6px}
 
 .modal-back{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:60}
 
@@ -131,6 +129,74 @@ input[type=number]{width:50px;padding:6px;margin-left:6px;border-radius:6px;bord
 
 
   <div class="date-lieu">
+
+    <strong>Date :</strong> 16 mai 2026<br>
+
+    <strong>Lieu :</strong> Stade de France
+
+  </div>
+
+
+
+  <div class="grid" id="grid">
+
+    <div class="ticket" data-seat="D’or et de platine">
+
+      <div class="seat">D’or et de platine</div>
+
+      <div class="desc">Épuisé</div>
+
+    </div>
+
+    <div class="ticket" data-seat="Catégorie 3">
+
+      <div class="seat">Catégorie 3</div>
+
+      <div class="desc">Épuisé</div>
+
+    </div>
+
+    <div class="ticket" data-seat="Catégorie 2">
+
+      <div class="seat">Catégorie 2</div>
+
+      <div class="desc">Épuisé</div>
+
+    </div>
+
+    <div class="ticket" data-seat="Catégorie 1">
+
+      <div class="seat">Catégorie 1</div>
+
+      <div class="desc">Épuisé</div>
+
+    </div>
+
+    <div class="ticket" data-seat="Early entrance pelouse">
+
+      <div class="seat">Early entrance pelouse</div>
+
+      <div class="desc">Épuisé</div>
+
+    </div>
+
+    <div class="ticket" data-seat="Pelouse sud">
+
+      <div class="seat">Pelouse sud</div>
+
+      <div class="desc">4 places disponibles</div>
+
+    </div>
+
+    <div class="ticket" data-seat="Pelouse nord">
+
+      <div class="seat">Pelouse nord</div>
+
+      <div class="desc">Épuisé</div>
+
+    </div>
+
+  </div>
 
 </div>
 
@@ -241,5 +307,4 @@ modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.style.display=
 </body>
 
 </html>
-
 
