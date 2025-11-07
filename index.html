@@ -1,325 +1,172 @@
 <!doctype html>
-
 <html lang="fr">
-
 <head>
-
 <meta charset="utf-8" />
-
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-
 <title>Billetterie Jul — Stade de France 2026</title>
-
 <style>
-
 :root{
-
-  --bg:#ffffff;
-
-  --card:#f7f5f3;
-
-  --accent:#800000; /* Bordeaux */
-
-  --accent2:#006400; /* Vert */
-
-  --muted:#555555;
-
+--bg:#ffffff;
+--card:#f7f5f3;
+--accent:#800000; /* Bordeaux */
+--accent2:#006400; /* Vert */
+--muted:#555555;
 }
-
 body{
-
-  margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
-
-  background:var(--bg);color:#000;display:flex;align-items:center;justify-content:center;
-
-  min-height:100vh;padding:20px
-
+margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+background:var(--bg);color:#000;display:flex;align-items:center;justify-content:center;
+min-height:100vh;padding:20px
 }
-
 .wrap{max-width:980px;width:100%}
-
 header{text-align:center;margin-bottom:20px}
-
 header h1{font-size:28px;color:var(--accent);margin-bottom:6px}
-
 header .alert{
-
-  font-size:22px;color:var(--accent2);font-weight:700;margin-bottom:12px;
-
+font-size:22px;color:var(--accent2);font-weight:700;margin-bottom:12px;
 }
-
 header img{
-
-  width:100%; max-width:500px; margin:20px auto; display:block; border-radius:12px;
-
+width:100%; max-width:500px; margin:20px auto; display:block; border-radius:12px;
 }
-
 .description{
-
-  background:#f0f0f0;padding:14px;border-radius:12px;margin-bottom:20px;color:#111;line-height:1.6;font-size:14px
+background:#f0f0f0;padding:14px;border-radius:12px;margin-bottom:20px;color:#111;line-height:1.6;font-size:14px
+}
+.plan img{
+width:100%;max-width:600px;margin:20px auto;display:block;border-radius:12px;
 
 }
-
 .date-lieu{
-
-  font-size:18px;font-weight:700;color:var(--accent);margin-top:10px;margin-bottom:16px;
-
+font-size:18px;font-weight:700;color:var(--accent);margin-top:10px;margin-bottom:16px;
 }
-
 .grid{
-
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px
-
+display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px
 }
-
 .ticket{
-
-  background:var(--card);padding:12px;border-radius:12px;border:1px solid #ddd;
-
-  cursor:pointer;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;justify-content:space-between;
-
+background:var(--card);padding:12px;border-radius:12px;border:1px solid #ddd;
+cursor:pointer;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;justify-content:space-between;
 }
-
 .ticket:hover{transform:translateY(-3px);box-shadow:0 4px 12px rgba(0,0,0,0.2)}
-
 .seat{font-weight:700;font-size:15px;margin-bottom:4px;color:var(--accent2)}
-
 .desc{color:var(--muted);font-size:13px;margin-bottom:6px}
-
 .modal-back{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:60}
-
 .modal{background:#fff;padding:22px;border-radius:14px;max-width:520px;width:92%;text-align:center;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,0.3)}
-
 .reveal-title{font-size:20px;margin-bottom:10px;color:var(--accent)}
-
 .reveal-text{color:#555;margin-bottom:16px;line-height:1.5;text-align:left;font-size:14px}
-
 .big{font-size:16px;font-weight:700;color:var(--accent2);margin-bottom:12px}
-
 .close{background:transparent;border:0;color:#555;padding:8px 12px;border-radius:8px;cursor:pointer}
-
 .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer;margin-top:8px}
-
 input[type=number]{width:50px;padding:6px;margin-left:6px;border-radius:6px;border:1px solid #ccc;text-align:center}
-
 </style>
-
 </head>
-
 <body>
-
 <div class="wrap">
+<header>
+<h1>Jul — Stade de France 2026</h1>
+<div class="alert">Des places viennent de tomber alors n’attends plus !</div>
+<img src="https://i.imgur.com/CC0WZYP.jpg" alt="Affiche du concert">
+</header>
 
-  <header>
+<div class="description">
+A la fois icône populaire, symbole générationnel et référence du rap français, Jul est un artiste historique dans le paysage musical francophone. Il est l’instigateur de plusieurs codes déjà culte pour toute une génération : le signe Jul, ses expressions iconiques et son authenticité qui font de lui un être humain apprécié, doublé d’un artiste talentueux.<br><br>
+Collectionnant les certifications (tous ses albums studios sont au minimum disque de platine, et cinq sont diamant, ce qui fait de lui l’artiste français le plus certifié avec Johnny Hallyday & Mylène Farmer), celui qu’on appelle L’Ovni s’est imposé depuis quelques années comme un artiste incontournable, trustant les charts à chacune de ses sorties.<br><br>
+Avec un minimum de deux albums par an, Jul est d’une productivité folle, et ne cesse de régaler ses fans, sa team comme il l’appelle.<br><br>
+Côté scène, après avoir battu tous les records en 2025 avec un Stade de France et deux Orange Vélodrome réunissant au total plus de 244 000 personnes, Jul annonce son grand retour en 2026.
+</div>
 
-    <h1>Jul — Stade de France 2026</h1>
-
-    <div class="alert">Des places viennent de tomber alors n’attends plus !</div>
-
-    <img src="https://i.imgur.com/CC0WZYP.jpg" alt="Affiche du concert">
-
-  </header>
-
-
-
-  <div class="description">
-
-    A la fois icône populaire, symbole générationnel et référence du rap français, Jul est un artiste historique dans le paysage musical francophone. Il est l’instigateur de plusieurs codes déjà culte pour toute une génération : le signe Jul, ses expressions iconiques et son authenticité qui font de lui un être humain apprécié, doublé d’un artiste talentueux.<br><br>
-
-    Collectionnant les certifications (tous ses albums studios sont au minimum disque de platine, et cinq sont diamant, ce qui fait de lui l’artiste français le plus certifié avec Johnny Hallyday & Mylène Farmer), celui qu’on appelle L’Ovni s’est imposé depuis quelques années comme un artiste incontournable, trustant les charts à chacune de ses sorties.<br><br>
-
-    Avec un minimum de deux albums par an, Jul est d’une productivité folle, et ne cesse de régaler ses fans, sa team comme il l’appelle.<br><br>
-
-    Côté scène, après avoir battu tous les records en 2025 avec un Stade de France et deux Orange Vélodrome réunissant au total plus de 244 000 personnes, Jul annonce son grand retour en 2026.
-
-  </div>
-
-
-
-  <div class="date-lieu">
-
-    <strong>Date :</strong> 16 mai 2026<br>
-
-    <strong>Lieu :</strong> Stade de France
-
-  </div>
-
-
-
-  <div class="grid" id="grid">
-
-    <div class="ticket" data-seat="D’or et de platine">
-
-      <div class="seat">D’or et de platine</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Catégorie 3">
-
-      <div class="seat">Catégorie 3</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Catégorie 2">
-
-      <div class="seat">Catégorie 2</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Catégorie 1">
-
-      <div class="seat">Catégorie 1</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Early entrance pelouse">
-
-      <div class="seat">Early entrance pelouse</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Pelouse sud">
-
-      <div class="seat">Pelouse sud</div>
-
-      <div class="desc">4 places disponibles</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Pelouse nord">
-
-      <div class="seat">Pelouse nord</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-  </div>
+<div class="plan">
+<img src="https://i.imgur.com/u3srSOr.jpg" alt="Plan des places">
 
 </div>
 
+<div class="date-lieu">
+<strong>Date :</strong> 16 mai 2026<br>
+<strong>Lieu :</strong> Stade de France
+</div>
 
+<div class="grid" id="grid">
+<div class="ticket" data-seat="D’or et de platine">
+<div class="seat">D’or et de platine</div>
+<div class="desc">Épuisé</div>
+</div>
+<div class="ticket" data-seat="Catégorie 3">
+<div class="seat">Catégorie 3</div>
+<div class="desc">Épuisé</div>
+</div>
+<div class="ticket" data-seat="Catégorie 2">
+<div class="seat">Catégorie 2</div>
+<div class="desc">Épuisé</div>
+</div>
+<div class="ticket" data-seat="Catégorie 1">
+<div class="seat">Catégorie 1</div>
+<div class="desc">Épuisé</div>
+</div>
+<div class="ticket" data-seat="Early entrance pelouse">
+<div class="seat">Early entrance pelouse</div>
+<div class="desc">Épuisé</div>
+</div>
+<div class="ticket" data-seat="Pelouse sud">
+<div class="seat">Pelouse sud</div>
+<div class="desc">4 places disponibles</div>
+</div>
+<div class="ticket" data-seat="Pelouse nord">
+<div class="seat">Pelouse nord</div>
+<div class="desc">Épuisé</div>
+</div>
+</div>
+</div>
 
 <div class="modal-back" id="modal">
-
-  <div class="modal" role="dialog" aria-modal="true">
-
-    <div class="reveal-title" id="rt">Réservation en cours…</div>
-
-    <div class="reveal-text" id="rd">Traitement de ton billet</div>
-
-    <div class="big" id="bigtext"></div>
-
-    <button class="btn" id="ok">Valider le panier</button>
-
-    <button class="close" id="close">Fermer</button>
-
-  </div>
-
+<div class="modal" role="dialog" aria-modal="true">
+<div class="reveal-title" id="rt">Réservation en cours…</div>
+<div class="reveal-text" id="rd">Traitement de ton billet</div>
+<div class="big" id="bigtext"></div>
+<button class="btn" id="ok">Valider le panier</button>
+<button class="close" id="close">Fermer</button>
+</div>
 </div>
 
-
-
 <script>
-
 const tickets = document.querySelectorAll('.ticket');
-
 const modal = document.getElementById('modal');
-
 const rt = document.getElementById('rt');
-
 const rd = document.getElementById('rd');
-
 const big = document.getElementById('bigtext');
-
 const ok = document.getElementById('ok');
-
 const close = document.getElementById('close');
 
-
-
 let available = {"Pelouse sud":4};
-
 let chosen = {seat:"", qty:1};
 
-
-
 tickets.forEach(t => {
-
-  t.addEventListener('click', () => {
-
-    const seat = t.dataset.seat;
-
-    if(!available[seat]){
-
-      alert("Désolé, cette catégorie est épuisée !");
-
-      return;
-
-    }
-
-    chosen.seat = seat;
-
-    chosen.qty = 1;
-
-    rt.textContent = "Billet choisi : " + seat;
-
-    rd.innerHTML = `
-
-      <img src="https://i.imgur.com/CC0WZYP.jpg" style="width:90%;border-radius:12px;margin-bottom:12px">
-
-      Combien de places ? (max 1)<br>
-
-      <input type="number" id="qty" min="1" max="${available[seat]}" value="1">
-
-    `;
-
-    big.textContent = "";
-
-    modal.style.display = "flex";
-
-    document.getElementById('qty').addEventListener('input', (e)=>{
-
-      let val = parseInt(e.target.value);
-
-      if(val > available[seat]) e.target.value = available[seat];
-
-      chosen.qty = e.target.value;
-
-    });
-
-  });
-
+t.addEventListener('click', () => {
+const seat = t.dataset.seat;
+if(!available[seat]){
+alert("Désolé, cette catégorie est épuisée !");
+return;
+}
+chosen.seat = seat;
+chosen.qty = 1;
+rt.textContent = "Billet choisi : " + seat;
+rd.innerHTML = `
+<img src="https://i.imgur.com/CC0WZYP.jpg" style="width:90%;border-radius:12px;margin-bottom:12px">
+Combien de places ? (max 1)<br>
+<input type="number" id="qty" min="1" max="${available[seat]}" value="1">
+`;
+big.textContent = "";
+modal.style.display = "flex";
+document.getElementById('qty').addEventListener('input', (e)=>{
+let val = parseInt(e.target.value);
+if(val > available[seat]) e.target.value = available[seat];
+chosen.qty = e.target.value;
 });
-
-
+});
+});
 
 ok.addEventListener('click', ()=>{
-
-  modal.style.display='none';
-
-  alert(`Panier validé !\nCatégorie : ${chosen.seat}\nNombre de places : ${chosen.qty}\n\nCette année on recommence ! C’était fou l’année dernière, ça le sera encore plus cette année ! Révise tes classiques et mets ton plus beau t-shirt pour venir avec nous ! 🎉`);
-
+modal.style.display='none';
+alert(`Panier validé !\nCatégorie : ${chosen.seat}\nNombre de places : ${chosen.qty}\n\nCette année on recommence ! C’était fou l’année dernière, ça le sera encore plus cette année ! Révise tes classiques et mets ton plus beau t-shirt pour venir avec nous ! 🎉`);
 });
 
-
-
 close.addEventListener('click', ()=>{ modal.style.display='none'; });
-
 modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.style.display='none'; });
-
 </script>
-
 </body>
-
 </html>
