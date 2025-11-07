@@ -12,63 +12,91 @@
 
 <style>
 
-  :root{
+:root{
 
-    --bg:#ffffff;
+  --bg:#ffffff;
 
-    --card:#f7f5f3;
+  --card:#f7f5f3;
 
-    --accent:#800000; /* Bordeaux */
+  --accent:#800000; /* Bordeaux */
 
-    --accent2:#006400; /* Vert */
+  --accent2:#006400; /* Vert */
 
-    --muted:#555555;
+  --muted:#555555;
 
-  }
+}
 
-  body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#000;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+body{
 
-  .wrap{max-width:980px;width:100%}
+  margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
 
-  header{margin-bottom:20px;text-align:center}
+  background:var(--bg);color:#000;display:flex;align-items:center;justify-content:center;
 
-  header h1{font-size:28px;color:var(--accent);margin-bottom:6px}
+  min-height:100vh;padding:20px
 
-  header p{font-size:14px;color:var(--muted);line-height:1.5;margin:0 0 12px}
+}
 
-  .description{background:#f0f0f0;padding:14px;border-radius:12px;margin-bottom:20px;color:#111;line-height:1.6;font-size:14px}
+.wrap{max-width:980px;width:100%}
 
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+header{text-align:center;margin-bottom:20px}
 
-  .ticket{background:var(--card);padding:12px;border-radius:12px;border:1px solid #ddd;cursor:pointer;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;justify-content:space-between}
+header h1{font-size:28px;color:var(--accent);margin-bottom:6px}
 
-  .ticket:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(0,0,0,0.2)}
+header .alert{
 
-  .seat{font-weight:700;font-size:15px;margin-bottom:6px;color:var(--accent2)}
+  font-size:20px;color:var(--accent2);font-weight:700;margin-bottom:12px;
 
-  .desc{color:var(--muted);font-size:13px;margin-bottom:10px}
+}
 
-  .tag{display:inline-block;padding:5px 8px;border-radius:999px;background:rgba(128,0,0,0.15);color:var(--accent);font-weight:600;font-size:12px;margin-bottom:4px}
+.description{
 
-  .footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+  background:#f0f0f0;padding:14px;border-radius:12px;margin-bottom:20px;color:#111;line-height:1.6;font-size:14px
 
-  /* modal */
+}
 
-  .modal-back{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:60}
+.date-lieu{
 
-  .modal{background:#fff;padding:22px;border-radius:14px;max-width:520px;width:92%;text-align:center;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+  font-size:16px;font-weight:700;color:var(--accent);margin-top:10px;margin-bottom:16px;
 
-  .reveal-title{font-size:20px;margin-bottom:10px;color:var(--accent)}
+}
 
-  .reveal-text{color:#555;margin-bottom:16px;line-height:1.5;text-align:left;font-size:14px}
+.grid{
 
-  .big{font-size:16px;font-weight:700;color:var(--accent2);margin-bottom:12px}
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px
 
-  .close{background:transparent;border:0;color:#555;padding:8px 12px;border-radius:8px;cursor:pointer}
+}
 
-  .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer;margin-top:8px}
+.ticket{
 
-  input[type=number]{width:50px;padding:6px;margin-left:6px;border-radius:6px;border:1px solid #ccc;text-align:center}
+  background:var(--card);padding:10px;border-radius:12px;border:1px solid #ddd;
+
+  cursor:pointer;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;justify-content:space-between;
+
+}
+
+.ticket:hover{transform:translateY(-3px);box-shadow:0 4px 12px rgba(0,0,0,0.2)}
+
+.seat{font-weight:700;font-size:15px;margin-bottom:4px;color:var(--accent2)}
+
+.desc{color:var(--muted);font-size:12px;margin-bottom:6px}
+
+.tag{display:inline-block;padding:4px 6px;border-radius:999px;background:rgba(128,0,0,0.15);color:var(--accent);font-weight:600;font-size:11px;margin-bottom:2px}
+
+.modal-back{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:60}
+
+.modal{background:#fff;padding:22px;border-radius:14px;max-width:520px;width:92%;text-align:center;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+
+.reveal-title{font-size:20px;margin-bottom:10px;color:var(--accent)}
+
+.reveal-text{color:#555;margin-bottom:16px;line-height:1.5;text-align:left;font-size:14px}
+
+.big{font-size:16px;font-weight:700;color:var(--accent2);margin-bottom:12px}
+
+.close{background:transparent;border:0;color:#555;padding:8px 12px;border-radius:8px;cursor:pointer}
+
+.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer;margin-top:8px}
+
+input[type=number]{width:50px;padding:6px;margin-left:6px;border-radius:6px;border:1px solid #ccc;text-align:center}
 
 </style>
 
@@ -82,7 +110,7 @@
 
     <h1>Jul — Stade de France 2026</h1>
 
-    <p>Des places viennent de tomber alors n’attends plus !</p>
+    <div class="alert">Des places viennent de tomber alors n’attends plus !</div>
 
   </header>
 
@@ -96,79 +124,13 @@
 
     Avec un minimum de deux albums par an, Jul est d’une productivité folle, et ne cesse de régaler ses fans, sa team comme il l’appelle.<br><br>
 
-    Côté scène, après avoir battu tous les records en 2025 avec un Stade de France et deux Orange Vélodrome réunissant au total plus de 244 000 personnes, Jul annonce son grand retour en 2026.<br><br>
-
-    <strong>Date :</strong> 16 mai 2026<br>
-
-    <strong>Lieu :</strong> Stade de France
+    Côté scène, après avoir battu tous les records en 2025 avec un Stade de France et deux Orange Vélodrome réunissant au total plus de 244 000 personnes, Jul annonce son grand retour en 2026.
 
   </div>
 
 
 
-  <div class="grid" id="grid">
-
-    <div class="ticket" data-seat="D’or et de platine">
-
-      <div class="seat">D’or et de platine</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Catégorie 3">
-
-      <div class="seat">Catégorie 3</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Catégorie 2">
-
-      <div class="seat">Catégorie 2</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Catégorie 1">
-
-      <div class="seat">Catégorie 1</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Early entrance pelouse">
-
-      <div class="seat">Early entrance pelouse</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Pelouse sud">
-
-      <div class="seat">Pelouse sud</div>
-
-      <div class="desc">4 places disponibles</div>
-
-    </div>
-
-    <div class="ticket" data-seat="Pelouse nord">
-
-      <div class="seat">Pelouse nord</div>
-
-      <div class="desc">Épuisé</div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="footer">Cette année on recommence ! C’était fou l’année dernière, ça le sera encore plus cette année ! Révise tes classiques et mets ton plus beau t-shirt pour venir avec nous !</div>
+  <div class="date-lieu">
 
 </div>
 
@@ -212,7 +174,7 @@ const close = document.getElementById('close');
 
 
 
-let available = {"Pelouse sud":4}; // seulement cette catégorie dispo
+let available = {"Pelouse sud":4};
 
 let chosen = {seat:"", qty:1};
 
@@ -264,7 +226,7 @@ ok.addEventListener('click', ()=>{
 
   modal.style.display='none';
 
-  alert(`Panier validé !\nCatégorie : ${chosen.seat}\nNombre de places : ${chosen.qty}\n\n🎉 Prépare-toi pour le concert !`);
+  alert(`Panier validé !\nCatégorie : ${chosen.seat}\nNombre de places : ${chosen.qty}\n\nCette année on recommence ! C’était fou l’année dernière, ça le sera encore plus cette année ! Révise tes classiques et mets ton plus beau t-shirt pour venir avec nous ! 🎉`);
 
 });
 
@@ -279,4 +241,5 @@ modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.style.display=
 </body>
 
 </html>
+
 
